@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshCart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <header class="header">
+        <a href="#" class="logo"> <i class="fas fa-shopping-basket"></i> FreshCart </a>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#products">Products</a>
+            <a href="#categories">Categories</a>
+            <a href="#review">Review</a>
+            <a href="#blogs">Blogs</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-user" id="login-btn"></div>
+        </div>
+
+
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <div class="shopping-cart">
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="image/cart-img-1.jpg" alt="">
+                <div class="content">
+                    <h3>Watermelon</h3>
+                    <span class="price">Sh200</span>
+                    <span class="quantity">qty : 1</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="image/cart-img-2.jpg" alt="">
+                <div class="content">
+                    <h3>Onions</h3>
+                    <span class="price">Sh100</span>
+                    <span class="quantity">qty : 1</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="image/cart-img-3.jpg" alt="">
+                <div class="content">
+                    <h3>Chicken</h3>
+                    <span class="price">Sh800</span>
+                    <span class="quantity">qty : 1</span>
+                </div>
+            </div>
+            <div class="total">Total: Sh1100</div>
+            <a href="#" class="btn">Check Out</a>
+        </div>
+
+        <form action="" class="login-form">
+            <h3>Login now</h3>
+            <input type="email" placeholder="Your Email" class="box">
+            <input type="password" placeholder="Your Password" class="box">
+            <p>Forgot your Password <a href="#">Click here</a></p>
+            <p>Don't have an account? <a href="#">Create now</a></p>
+            <input type="submit" placeholder="Login now" class="btn">
+        </form>
+    </header>
+
+
+
+    <!--home section-->
+
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Fresh and <span>organic</span> products for you</h3>
+            <p>Enjoy the taste of fresh, wholesome food that supports a healthier lifestyle!</p>
+            <a href="#" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+
+
+    <!--features section -->
+    <section class="features" id="features">
+        <h1 class="heading"> Our <span>Features</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="image/feature-img-1.jpg" alt="">
+                <h3>Fresh and Organic</h3>
+                <p>Our products are sourced from local farms, ensuring you get the highest quality and
+                    healthiest options for you and your family.
+                    From vibrant fruits and vegetables to organic grains and dairy,
+                    every item is selected with your well-being in mind.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="box">
+                <img src="image/feature-img-2.jpg" alt="">
+                <h3>Free Delivery</h3>
+                <p>We ensure that your fresh groceries and everyday essentials are delivered right to your door at no
+                    extra cost.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="box">
+                <img src="image/feature-img-3.jpg" alt="">
+                <h3>Easy Payments</h3>
+                <p>We offer is Easy Payment, allowing you to complete your purchases quickly and securely.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--products section-->
+    <section class="products" id="products">
+        <h1 class="heading"> our <span>products</span></h1>
+
+        <div class="swiper product-slider">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide box">
+                    <img src="image/product-1.jpg" alt="">
+                    <h3>Oranges</h3>
+                    <div class="price">Sh50 - Sh100</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="image/product-2.jpg" alt="">
+                    <h3>Onions</h3>
+                    <div class="price">Sh100 - Sh150</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="image/product-3.jpg" alt="">
+                    <h3>Fresh Meat</h3>
+                    <div class="price">Sh400 - Sh1000</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="image/product-4.jpg" alt="">
+                    <h3>Cabbage</h3>
+                    <div class="price">Sh50 - Sh100</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="swiper product-slider">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide box">
+                    <img src="image/product-5.jpg" alt="">
+                    <h3>Potatoes</h3>
+                    <div class="price">Sh150 - Sh200</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="image/product-6.jpg" alt="">
+                    <h3>Ovacado</h3>
+                    <div class="price">Sh30 - Sh100</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="image/product-7.jpg" alt="">
+                    <h3>Carrots</h3>
+                    <div class="price">Sh100 - Sh200</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="image/product-8.jpg" alt="">
+                    <h3>Lemons</h3>
+                    <div class="price">Sh100 - Sh150</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <a href="#" class="btn">add to cart</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--categories section-->
+    <section class="categories" id="categories">
+        <h1 class="heading">product <span>categories</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="image/cat-1.jpg" alt="">
+                <h3>Vegetables</h3>
+                <p>upto 45% off</p>
+                <a href="#" class="btn">Shop Now</a>
+            </div>
+            <div class="box">
+                <img src="image/cat-2.jpg" alt="">
+                <h3>Fresh Fruits</h3>
+                <p>upto 45% off</p>
+                <a href="#" class="btn">Shop Now</a>
+            </div>
+            <div class="box">
+                <img src="image/cat-3.jpg" alt="">
+                <h3>Dairy Products</h3>
+                <p>upto 45% off</p>
+                <a href="#" class="btn">Shop Now</a>
+            </div>
+            <div class="box">
+                <img src="image/cat-1.jpg" alt="">
+                <h3>Fresh Meat</h3>
+                <p>upto 45% off</p>
+                <a href="#" class="btn">Shop Now</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!--review section-->
+    <section class="review" id="review">
+        <h1 class="heading">customer's <span>review</span></h1>
+
+        <div class="swiper review-slider">
+            <div class="swiper-wrapper">
+
+                <div class=" swiper-slide box">
+                    <img src="image/pic-1.jpg" alt="">
+                    <p>This store has everything I need and more! The aisles are well-organized, making it easy to find
+                        everything on my list. Plus, the checkout lines are fast and efficient, which is a huge plus
+                        when I’m in a rush.</p>
+                    <h3>Armani Dee</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="image/pic-2.jpg" alt="">
+                    <p>I love shopping here! The produce is always fresh, and I can tell the store takes great care in
+                        sourcing their products. The organic section is my favorite, and I always find new and exciting
+                        things to try!</p>
+                    <h3>Nikita Joan</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="image/pic-3.jpg" alt="">
+                    <p>I've been shopping here for months, and the prices are always fair. I love that they have weekly
+                        sales and promotions, especially on my favorite items. You really get a lot of value for your
+                        money</p>
+                    <h3>Maryah Jay</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="image/pic-4.jpg" alt="">
+                    <p>What I appreciate the most is the variety of locally sourced products. It’s wonderful to support
+                        local farmers and small businesses while getting the best quality produce. Highly recommend this
+                        store for anyone who loves fresh, local food</p>
+                    <h3>Asiah Wann</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--blogs section-->
+    <section class="blogs" id="blogs">
+        <h1 class="heading">our <span>blogs</span></h1>
+        <div class="box-container">
+
+            <div class="box">
+                <img src="image/blog-1.jpg" alt="">
+                <div class="content">
+                    <div class="icons">
+                        <a href="#"><i class="fas fa-user"></i> by user </a>
+                        <a href="#"><i class="fas fa-calender"></i> 20th March, 2025 </a>
+                    </div>
+                    <h3>The Importance of Meal Planning: Save Time, Money, and Stress</h3>
+                    <p>Meal planning can be a game-changer for busy families or anyone looking to eat healthier. By
+                        planning your meals for the week, you can create a shopping list that eliminates the stress of
+                        last-minute dinner decisions. Plus, it helps reduce food waste and saves you money by buying
+                        only what you need. Check out our blog for easy meal prep ideas and tips on creating a grocery
+                        list that works for you.</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="image/blog-2.jpg" alt="">
+                <div class="content">
+                    <div class="icons">
+                        <a href="#"><i class="fas fa-user"></i> by user </a>
+                        <a href="#"><i class="fas fa-calender"></i> 20th March, 2025 </a>
+                    </div>
+                    <h3>The Benefits of Shopping Locally: Why Support Local Farmers?</h3>
+                    <p>Shopping at local grocery stores not only gives you access to fresh, high-quality produce but
+                        also supports local farmers and small businesses in your community. By purchasing locally grown
+                        food, you’re ensuring that your money stays within your region, which helps to boost the local
+                        economy. Plus, when you buy locally, you’re reducing the environmental impact of long-distance
+                        food transportation, which means fresher food with a lower carbon footprint!</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="image/blog-3.jpg" alt="">
+                <div class="content">
+                    <div class="icons">
+                        <a href="#"><i class="fas fa-user"></i> by user </a>
+                        <a href="#"><i class="fas fa-calendar"></i> 20th March, 2025 </a>
+                    </div>
+                    <h3>Tips for Creating a Healthier Grocery List</h3>
+                    <p>A well-thought-out grocery list is key to a healthier lifestyle. Start by filling your cart with
+                        fresh fruits, vegetables, whole grains, and lean proteins. Don't forget to plan for
+                        snacks—healthy options like nuts, yogurt, or fresh fruit are great alternatives to processed
+                        snacks. Sticking to your list helps avoid impulse buys and ensures you're making nutritious
+                        choices that align with your health goals.</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--footer section-->
+    <section class="footer">
+        <div class="box-container">
+
+            <div class="box">
+                <h3>FreshCart <i class="fas fa-shopping-basket"></i></h3>
+                <p> Happy shopping, and don’t forget to check back for exciting deals and updates</p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <h3>Contact Info</h3>
+                <a href="#" class="links"> <i class="fas fa-phone"></i>+254796886037</a>
+                <a href="#" class="links"> <i class="fas fa-phone"></i>+254110271723</a>
+                <a href="#" class="links"> <i class="fas fa-envelope"></i>freshcart@gmail.com</a>
+                <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i>Nairobi, Kenya - 00100</a>
+            </div>
+
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="#" class="links"><i class="fas fa-arrow-right"></i>home</a>
+                <a href="#" class="links"><i class="fas fa-arrow-right"></i>features</a>
+                <a href="#" class="links"><i class="fas fa-arrow-right"></i>products</a>
+                <a href="#" class="links"><i class="fas fa-arrow-right"></i>categories</a>
+                <a href="#" class="links"><i class="fas fa-arrow-right"></i>review</a>
+                <a href="#" class="links"><i class="fas fa-arrow-right"></i>blogs</a>
+            </div>
+
+            <div class="box">
+                <h3>Newsletter</h3>
+                <p>Subscribe for Latest Updates</p>
+                <input type="email" placeholder="Your Email" class="email">
+                <input type="submit" value="subscribe" class="btn">
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
